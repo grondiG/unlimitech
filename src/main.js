@@ -1,13 +1,38 @@
 import './style.scss'
-import phoneLogo from './assets/phone-flip.svg'
-import editLogo from './assets/edit.svg'
-import restockLogo from './assets/restock.svg'
-import shippingLogo from './assets/shipping-fast.svg'
+
 import unlimitechLogo from './assets/logo.svg'
-import searchLogo from './assets/Search_light.svg'
-import userLogo from './assets/User_light.svg'
-import favLogo from './assets/Favorite_light.svg'
-import bagLogo from './assets/Bag_alt_light.svg'
+
+import phoneLogo from './assets/icons/phone-flip.svg'
+import editLogo from './assets/icons/edit.svg'
+import restockLogo from './assets/icons/restock.svg'
+import shippingLogo from './assets/icons/shipping-fast.svg'
+import searchLogo from './assets/icons/Search_light.svg'
+import userLogo from './assets/icons/User_light.svg'
+import favLogo from './assets/icons/Favorite_light.svg'
+import bagLogo from './assets/icons/Bag_alt_light.svg'
+import newsletterLogo from './assets/icons/newsletter.svg'
+import arrowRightLogo from './assets/icons/arrow_right.svg'
+
+import inpostKurierLogo from './assets/companies/InPost_kurier.svg'
+import inpostLogo from './assets/companies/inpost_logotyp.svg'
+import blikLogo from './assets/companies/Blik_logo 1.svg'
+import przelewyLogo from './assets/companies/przelewy24-logo 1.svg'
+import payPoLogo from './assets/companies/paypo.svg'
+import paypalLogo from './assets/companies/1024px-PayPal_logo 1.svg'
+import facebookLogo from './assets/companies/facebook (50).svg'
+import instagramLogo from './assets/companies/instagram (48).svg'
+import tiktokLogo from './assets/companies/tik-tok (6).svg'
+
+import balerinkiIcon from './assets/categories/balerinki_60_60px 1.svg'
+import botkiIcon from './assets/categories/botki_60_60px.svg'
+import jazzowkiIcon from './assets/categories/jazzowki_60_60px.svg'
+import klapkiIcon from './assets/categories/klapki_60_60px 1.svg'
+import kozakiIcon from './assets/categories/kozaki_60_60px.svg'
+import outletIcon from './assets/categories/outlet_60_60px.svg'
+import polbutyIcon from './assets/categories/polbuty_60_60px.svg'
+import sandalyIcon from './assets/categories/sandaly_60_60px.svg'
+import szpilkiIcon from './assets/categories/szpiki_60_60px.svg'
+
 
 document.querySelector('#app').innerHTML = `
       <div class="header">
@@ -37,8 +62,85 @@ document.querySelector('#app').innerHTML = `
             <img src="${unlimitechLogo}" class="nav__logo-image" alt="Unlimitech Logo">
         </div>
         <ul class="nav__items">
-            <li class="nav__items-item">
-                <a href="#" class="nav__items-item-link">Damskie buty skórzane <span>&#8964;</span></a>
+            <li class="nav__items-item dropdown-hover-item">
+                <a href="#" class="nav__items-item-link">Damskie buty skórzane 
+                <i class="nav__items-item-link-down fa fa-chevron-down"></i>
+                </a>
+<div class="dropdown-menu">
+    <div class="dropdown-menu__categories">
+        <ul>
+            <li>
+                <img src="${polbutyIcon}" alt="Półbuty Icon">
+                <span>Półbuty</span>
+            </li>
+            <li>
+                <img src="${jazzowkiIcon}" alt="Jazówki Icon">
+                <span>Jazówki</span>
+            </li>
+            <li>
+                <img src="${szpilkiIcon}" alt="Czółenka Icon">
+                <span>Czółenka</span>
+            </li>
+            <li>
+                <img src="${balerinkiIcon}" alt="Baleriny Icon">
+                <span>Baleriny</span>
+            </li>
+            <li>
+                <img src="${sandalyIcon}" alt="Sandały Icon">
+                <span>Sandały</span>
+            </li>
+            <li>
+                <img src="${klapkiIcon}" alt="Klapki Icon">
+                <span>Klapki</span>
+            </li>
+            <li class="active">
+                <img src="${botkiIcon}" alt="Botki Icon">
+                <span>Botki</span>
+            </li>
+            <li>
+                <img src="${kozakiIcon}" alt="Kozaki Icon">
+                <span>Kozaki</span>
+            </li>
+            <li>
+                <img src="${outletIcon}" alt="Outlet Icon">
+                <span>Outlet</span>
+            </li>
+            <li>
+                <a href="#" class="dropdown-menu__categories-showall">Pokaż wszystkie</a>
+            </li>
+        </ul>
+    </div>
+    <div class="dropdown-menu__navigation">
+    <div class="dropdown-menu__navigation__links">
+        <ul>
+            <li><a href="#">sztyblety</a></li>
+            <li><a href="#">botki płaskie</a></li>
+            <li><a href="#">botki na słupku</a></li>
+            <li><a href="#">botki sznurowane</a></li>
+            <li><a href="#">workery</a></li>
+            <li><a href="#">botki dziurkowane</a></li>
+            <li><a href="#">botki wiosenne</a></li>
+            <li><a href="#">botki z wycięciem</a></li>
+            <li><a href="#">botki ażurowe</a></li>
+        </ul>
+    </div>
+    <div class="dropdown-menu__navigation__links">
+        <ul>
+            <li><a href="#">botki na obcasie</a></li>
+            <li><a href="#">botki kowbojki</a></li>
+            <li><a href="#">botki na szpilce</a></li>
+            <li><a href="#">botki ocieplane</a></li>
+            <li><a href="#">botki jesienne</a></li>
+            <li><a href="#">botki zimowe</a></li>
+            <li><a href="#">botki na koturnie</a></li>
+            <li><a href="#">botki letnie</a></li>
+        </ul>
+    </div>
+    <div class="dropdown-menu__navigation__image">
+        <img src="https://picsum.photos/seed/34534111/1275/1750" alt="Person wearing black boots">
+    </div>
+    </div>
+</div>
             </li>
             <li class="nav__items-item">
                 <a href="#" class="nav__items-item-link">Bony podarunkowe</a>
@@ -67,12 +169,12 @@ document.querySelector('#app').innerHTML = `
         </a>
         <a class="nav__additional__button" href="#">
             <div class="nav__additional__button-round">
-                <img class="nav__additional__button-round-image" src="${favLogo}" alt="User Icon"/>
+                <img class="nav__additional__button-round-image" src="${favLogo}" alt="Favourite Icon"/>
             </div>
         </a>
-        <a class="nav__additional__button" href="#">
+        <a class="nav__additional__button cart-toggle-button" href="#">
             <div class="nav__additional__button-round">
-                <img class="nav__additional__button-round-image" src="${bagLogo}" alt="User Icon"/>
+                 <img class="nav__additional__button-round-image" src="${bagLogo}" alt="Cart Icon"/>
             </div>
         </a>
         </div>
@@ -352,5 +454,217 @@ document.querySelector('#app').innerHTML = `
                 </div>
             </div>
         </div>
+        <div class="newsletter" style="background-image: url('${newsletterLogo}')">
+            <div class="newsletter__content">
+               <h2 class="newsletter__content-title">Chcesz otrzymać <span class="newsletter__content-title-percentage">5%</span> zniżki na swoje zakupy?</h2>
+               <p class="newsletter__content-text">Zapisz się do naszego newslettera i jako pierwsza dowiedz się o nowościach, promocjach i ofertach specjalnych!</p>
+            </div>
+            <div class="newsletter__form">
+                <div class="newsletter__form-email">
+                    <input type="email" class="newsletter__form-email-input" placeholder="Wpisz swój e-mail" />
+                    <a class="newsletter__form-email-button">
+                        <img src="${arrowRightLogo}" alt="submit" class="newsletter__form-email-button-image" />
+                    </a>
+                    <span class="newsletter__form-email-error">&#9888; Proszę podać prawidłowy adres e-mail.</span>
+                </div>
+                <div class="newsletter__form-checkbox">
+                    <input id="mail" type="checkbox" class="newsletter__form-checkbox-input"/>
+                    <label for="mail" class="newsletter__form-checkbox-text">Akceptuję Regulamin i Politykę Prywatności.</label>
+                </div>
+            </div>
+        </div>
+       <div class="footer">
+        <div class="footer__content">
+            <div class="footer__content-item">
+            <h3 class="footer__content-item-title">O nas</h3>
+           <p class="footer__content-item-text">Poznajmy się</p>
+           <p class="footer__content-item-text">Skontaktuj się z nami</p>
+           <p class="footer__content-item-text">Dołącz do nas</p>
+       </div>
+       <div class="footer__content-item">
+           <h3 class="footer__content-item-title">Informacje</h3>
+           <p class="footer__content-item-text">Regulamin</p>
+           <p class="footer__content-item-text">Polityka prywatności</p>
+           <p class="footer__content-item-text">Zasady gwarancji</p>
+       </div>
+       <div class="footer__content-item">
+           <h3 class="footer__content-item-title">Twoje konto</h3>
+           <p class="footer__content-item-text">Twoje konto</p>
+           <p class="footer__content-item-text">Twoje zamówienia</p>
+           <p class="footer__content-item-text">Logowanie</p>
+           <p class="footer__content-item-text">Rejestracja</p>
+       </div>
+       <div class="footer__content-item">
+           <h3 class="footer__content-item-title">Obsługa klienta</h3>
+           <p class="footer__content-item-text">Dostawa i płatność</p>
+           <p class="footer__content-item-text">Wymiana</p>
+           <p class="footer__content-item-text">Zwrot</p>
+           <p class="footer__content-item-text">Reklamacje</p>
+           <p class="footer__content-item-text">FAQ</p>
+       </div>
+       <div class="footer__content-item">
+           <h3 class="footer__content-item-title">Skontaktuj się z nami</h3>
+           <p class="footer__content-item-text contact">
+           <img src="${phoneLogo}" class="footer__content-item-icon" alt="Phone Icon">
+            (+48) 000 000 000
+           </p>
+           <p class="footer__content-item-text contact">
+              <img src="${editLogo}" class="footer__content-item-icon" alt="Email Icon">
+           sklep@kontakt.com.pl
+           </p>
+           <p class="footer__content-item-text">Jesteśmy do Twojej dyspozycji od poniedziałku do piątku w godzinach 8:00 - 16:00</p>
+       </div>
+   </div>
+   <div class="footer__bottom">
+    <div class="footer__bottom-companies">
+        <h2>Dostawa i płatność</h2>
+        <div class="footer__bottom-companies-logos">
+               <img src="${inpostKurierLogo}" class="footer__bottom-companies-logo" alt="InPost Kurier Logo"/>
+               <img src="${inpostLogo}" class="footer__bottom-companies-logo" alt="InPost Logo"/>
+               <img src="${blikLogo}" class="footer__bottom-companies-logo" alt="Blik Logo"/>
+               <img src="${przelewyLogo}" class="footer__bottom-companies-logo" alt="Przelewy24 Logo"/>
+               <img src="${payPoLogo}" class="footer__bottom-companies-logo" alt="PayPo Logo"/>
+               <img src="${paypalLogo}" class="footer__bottom-companies-logo" alt="PayPal Logo"/>
+        </div>
+    </div>
+    <div class="footer__bottom-socialmedia">
+        <h2>Social media</h2>
+        <div class="footer__bottom-socialmedia-logos">
+            <a href="#" class="footer__bottom-socialmedia-logo">
+                <img src="${facebookLogo}" alt="Facebook Logo"/>
+            </a>
+            <a href="#" class="footer__bottom-socialmedia-logo">
+                <img src="${instagramLogo}" alt="Instagram Logo"/>
+            </a>
+            <a href="#" class="footer__bottom-socialmedia-logo">
+                <img src="${tiktokLogo}" alt="TikTok Logo"/>
+            </a>
+           </div>
+    </div>
+   </div>
+</div>
   </div>
+  <div class="cart-overlay">
+    <div class="cart">
+        <div class="cart__container">
+        <div class="cart__header">
+            <h2 class="cart__title">Koszyk <span class="cart__item-count">(2 sztuki)</span></h2>
+            <button class="cart__close-btn">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+        </div>
+        <div class="cart__items">
+            <div class="cart__items-item">
+                <img class="cart__items-item__image" src="https://picsum.photos/seed/1212/620/850" alt="Półbuty mokasyny na grubej podeszwie">
+                <div class="cart__items-item__details">
+                    <p class="cart__items-item__name">Półbuty mokasyny na grubej podeszwie</p>
+                    <p class="cart__items-item__price-info">1 szt. x 129,99 zł</p>
+                </div>
+                <button class="cart__items-item__delete-btn">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+            <div class="cart__items-item">
+                <img class="cart__items-item__image" src="https://picsum.photos/seed/3434/620/850" alt="Półbuty skóra naturalna - model 258">
+                <div class="cart__items-item__details">
+                    <p class="cart__items-item__name">Półbuty skóra naturalna - model 258</p>
+                    <p class="cart__items-item__price-info">1 szt. x 129,99 zł</p>
+                </div>
+                <button class="cart__items-item__delete-btn">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
+            </div>
+        </div>
+        </div>
+        <div class="cart__footer">
+            <div class="cart__shipping-info">
+                <i class="fa-solid fa-box-open" style="color: #0068FF"></i>
+                <p>Do darmowej dostawy brakuje: <strong>39,99 zł</strong></p>
+            </div>
+            <div class="cart__progress-bar">
+                    <div class="cart__progress-bar-fill"></div>
+            </div>
+            <div class="cart__total">
+                <span class="cart__total-label">Razem do zapłaty:</span>
+                <span class="cart__total-amount">129,99 zł</span>
+            </div>
+            <button class="cart__checkout-btn">Przejdź do koszyka</button>
+        </div>
+    </div>
+</div>
 `
+
+document.querySelector(".newsletter__form-email-button").addEventListener("click", (event) => {
+    event.preventDefault();
+    const emailInput = document.querySelector(".newsletter__form-email-input");
+    const emailError = document.querySelector(".newsletter__form-email-error");
+    const email = emailInput.value.trim();
+    const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (emailPattern.test(email)) {
+        emailError.style.display = "none";
+        emailInput.value = "";
+    } else {
+        emailError.style.display = "block";
+    }
+});
+
+// JS for Dropdown Menu
+document.addEventListener('DOMContentLoaded', () => {
+    const dropdownTrigger = document.querySelector('.dropdown-hover-item');
+    const dropdownMenu = document.querySelector('.dropdown-menu');
+    const dropdownIcon = document.querySelector('.dropdown-hover-item i.nav__items-item-link-down');
+
+    const cartToggleButton = document.querySelector('.cart-toggle-button');
+    const cartOverlay = document.querySelector('.cart-overlay');
+    const cartCloseButton = document.querySelector('.cart__close-btn');
+
+    if (dropdownTrigger && dropdownMenu) {
+        dropdownTrigger.addEventListener('click', (e) => {
+            console.log(e.target.classList)
+            if(e.target.classList.contains('nav__items-item-link') ||
+                e.target.classList.contains('nav__items-item-link-down')) {
+
+                if (dropdownMenu.style.display === 'flex') {
+                    dropdownMenu.style.display = 'none';
+                    dropdownIcon.classList.remove('fa-chevron-up');
+                    dropdownIcon.classList.add('fa-chevron-down');
+                } else {
+                    dropdownMenu.style.display = 'flex';
+                    dropdownIcon.classList.remove('fa-chevron-down');
+                    dropdownIcon.classList.add('fa-chevron-up')
+                }
+            }
+        });
+
+
+
+        const toggleCart = (e) => {
+            e.preventDefault(); // Prevent the anchor tag from navigating
+            cartOverlay.classList.toggle('active');
+        };
+
+        if (cartToggleButton) {
+            cartToggleButton.addEventListener('click', toggleCart);
+        }
+
+        if (cartCloseButton) {
+            cartCloseButton.addEventListener('click', toggleCart);
+        }
+
+        if (cartOverlay) {
+            cartOverlay.addEventListener('click', (e) => {
+                if (e.target === cartOverlay) {
+                    cartOverlay.classList.remove('active');
+                }
+            });
+        }
+    }
+
+    document.addEventListener('click', (event) => {
+        if (!dropdownTrigger.contains(event.target) && !dropdownMenu.contains(event.target)) {
+            dropdownMenu.style.display = 'none';
+            dropdownIcon.classList.remove('fa-chevron-up');
+            dropdownIcon.classList.add('fa-chevron-down');
+        }
+    });
+});
