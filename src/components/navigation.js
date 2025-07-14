@@ -1,8 +1,8 @@
-import { 
-  unlimitechLogo, 
-  searchLogo, 
-  userLogo, 
-  favLogo, 
+import {
+  unlimitechLogo,
+  searchLogo,
+  userLogo,
+  favLogo,
   bagLogo,
   hamburgerLogo,
   polbutyIcon,
@@ -13,14 +13,14 @@ import {
   klapkiIcon,
   botkiIcon,
   kozakiIcon,
-  outletIcon
-} from '../assets/index.js'
+  outletIcon,
+} from "../assets/index.js";
 
 export function createNavigation() {
   return `
     <div class="nav">
         <div class="nav__logo">
-            <img src="${unlimitechLogo}" class="nav__logo-image" alt="Unlimitech Logo">
+            <img src="${unlimitechLogo}" class="nav__logo-image" alt="Unlimitech Logo" loading="lazy">
         </div>
         <ul class="nav__items">
             <li class="nav__items-item dropdown-hover-item">
@@ -31,39 +31,39 @@ export function createNavigation() {
                     <div class="dropdown-menu__categories">
                         <ul>
                             <li>
-                                <img src="${polbutyIcon}" alt="Półbuty Icon">
+                                <img src="${polbutyIcon}" alt="Półbuty Icon" loading="lazy">
                                 <span>Półbuty</span>
                             </li>
                             <li>
-                                <img src="${jazzowkiIcon}" alt="Jazówki Icon">
+                                <img src="${jazzowkiIcon}" alt="Jazówki Icon" loading="lazy">
                                 <span>Jazówki</span>
                             </li>
                             <li>
-                                <img src="${szpilkiIcon}" alt="Czółenka Icon">
+                                <img src="${szpilkiIcon}" alt="Czółenka Icon" loading="lazy">
                                 <span>Czółenka</span>
                             </li>
                             <li>
-                                <img src="${balerinkiIcon}" alt="Baleriny Icon">
+                                <img src="${balerinkiIcon}" alt="Baleriny Icon" loading="lazy">
                                 <span>Baleriny</span>
                             </li>
                             <li>
-                                <img src="${sandalyIcon}" alt="Sandały Icon">
+                                <img src="${sandalyIcon}" alt="Sandały Icon" loading="lazy">
                                 <span>Sandały</span>
                             </li>
                             <li>
-                                <img src="${klapkiIcon}" alt="Klapki Icon">
+                                <img src="${klapkiIcon}" alt="Klapki Icon" loading="lazy">
                                 <span>Klapki</span>
                             </li>
                             <li class="active">
-                                <img src="${botkiIcon}" alt="Botki Icon">
+                                <img src="${botkiIcon}" alt="Botki Icon" loading="lazy">
                                 <span>Botki</span>
                             </li>
                             <li>
-                                <img src="${kozakiIcon}" alt="Kozaki Icon">
+                                <img src="${kozakiIcon}" alt="Kozaki Icon" loading="lazy">
                                 <span>Kozaki</span>
                             </li>
                             <li>
-                                <img src="${outletIcon}" alt="Outlet Icon">
+                                <img src="${outletIcon}" alt="Outlet Icon" loading="lazy">
                                 <span>Outlet</span>
                             </li>
                             <li>
@@ -98,7 +98,7 @@ export function createNavigation() {
                         </ul>
                     </div>
                     <div class="dropdown-menu__navigation__image">
-                        <img src="https://picsum.photos/seed/34534111/1275/1750" alt="Person wearing black boots">
+                        <img src="https://picsum.photos/seed/34534111/1275/1750" alt="Person wearing black boots" loading="lazy">
                     </div>
                     </div>
                 </div>
@@ -120,33 +120,30 @@ export function createNavigation() {
         <div class="nav__additional__search">
             <input type="text" class="nav__additional__search-input" placeholder="Wyszukaj"/>
             <a href="#" class="nav__additional__search-button">
-                <img class="nav__additional__search-button-image" src="${searchLogo}" alt="Search Icon"/>
+                <img class="nav__additional__search-button-image" src="${searchLogo}" alt="Search Icon" loading="lazy"/>
             </a>
         </div>
         <a class="nav__additional__button" href="#">
             <div class="nav__additional__button-round">
-                <img class="nav__additional__button-round-image" src="${userLogo}" alt="User Icon"/>
+                <img class="nav__additional__button-round-image" src="${userLogo}" alt="User Icon" loading="lazy"/>
             </div>
         </a>
         <a class="nav__additional__button" href="#">
             <div class="nav__additional__button-round">
-                <img class="nav__additional__button-round-image" src="${favLogo}" alt="Favourite Icon"/>
+                <img class="nav__additional__button-round-image" src="${favLogo}" alt="Favourite Icon" loading="lazy"/>
             </div>
         </a>
         <a class="nav__additional__button cart-toggle-button" href="#">
             <div class="nav__additional__button-round">
-                 <img class="nav__additional__button-round-image" src="${bagLogo}" alt="Cart Icon"/>
+                 <img class="nav__additional__button-round-image" src="${bagLogo}" alt="Cart Icon" loading="lazy"/>
             </div>
         </a>
         <a class="nav__additional__button menu-toggle-button" href="#">
             <div class="nav__additional__button-round">
-                 <img class="nav__additional__button-round-image" src="${hamburgerLogo}" alt="Menu Icon"/>
+                 <img class="nav__additional__button-round-image" src="${hamburgerLogo}" alt="Menu Icon" loading="lazy"/>
             </div>
         </a>
         </div>
     </div>
-  `
+  `;
 }
-
-
-

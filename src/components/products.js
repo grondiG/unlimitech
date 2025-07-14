@@ -17,7 +17,7 @@ export function createProducts() {
                         <p class="latest__products__carousel-slide-product-badges-badge bestseller">bestseller</p>
                         <p class="latest__products__carousel-slide-product-badges-badge new">nowość</p>
                     </div>
-                    <img src="https://picsum.photos/seed/653445/620/850" alt="Product 1" class="latest__products__carousel-slide-product-image">
+                    <img src="https://picsum.photos/seed/653445/620/850" alt="Product 1" class="latest__products__carousel-slide-product-image" loading="lazy">
                     <div class="product-info">
                         <p class="latest__products__carousel-slide-product-title">Półbuty mokasyny na grubej podeszwie</p>
                         <p class="latest__products__carousel-slide-product-availability">Zapato | Dostępny</p>
@@ -31,7 +31,7 @@ export function createProducts() {
                     <div class="latest__products__carousel-slide-product-badges">
                         <p class="latest__products__carousel-slide-product-badges-badge sale">promocja</p>
                     </div>
-                    <img src="https://picsum.photos/seed/2137/620/850" alt="Product 2" class="latest__products__carousel-slide-product-image">
+                    <img src="https://picsum.photos/seed/2137/620/850" alt="Product 2" class="latest__products__carousel-slide-product-image" loading="lazy">
                     <div class="product-info">
                         <p class="latest__products__carousel-slide-product-title">Półbuty mokasyny na grubej podeszwie</p>
                         <p class="latest__products__carousel-slide-product-availability">Zapato | Dostępny</p>
@@ -50,7 +50,7 @@ export function createProducts() {
                         <p class="latest__products__carousel-slide-product-badges-badge bestseller">bestseller</p>
                         <p class="latest__products__carousel-slide-product-badges-badge new">nowość</p>
                     </div>
-                    <img src="https://picsum.photos/seed/2131/620/850" alt="Product 3" class="latest__products__carousel-slide-product-image">
+                    <img src="https://picsum.photos/seed/2131/620/850" alt="Product 3" class="latest__products__carousel-slide-product-image" loading="lazy">
                     <div class="product-info">
                         <p class="latest__products__carousel-slide-product-title">Półbuty mokasyny na grubej podeszwie</p>
                         <p class="latest__products__carousel-slide-product-availability">Zapato | Dostępny</p>
@@ -64,7 +64,7 @@ export function createProducts() {
                     <div class="latest__products__carousel-slide-product-badges">
                         <p class="latest__products__carousel-slide-product-badges-badge sale">promocja</p>
                     </div>
-                    <img src="https://picsum.photos/seed/3211/620/850" alt="Product 4" class="latest__products__carousel-slide-product-image">
+                    <img src="https://picsum.photos/seed/3211/620/850" alt="Product 4" class="latest__products__carousel-slide-product-image" loading="lazy">
                     <div class="product-info">
                         <p class="latest__products__carousel-slide-product-title">Półbuty mokasyny na grubej podeszwie</p>
                         <p class="latest__products__carousel-slide-product-availability">Zapato | Dostępny</p>
@@ -82,7 +82,7 @@ export function createProducts() {
                     <div class="latest__products__carousel-slide-product-badges">
                         <p class="latest__products__carousel-slide-product-badges-badge bestseller">bestseller</p>
                     </div>
-                    <img src="https://picsum.photos/seed/4455/620/850" alt="Product 5" class="latest__products__carousel-slide-product-image">
+                    <img src="https://picsum.photos/seed/4455/620/850" alt="Product 5" class="latest__products__carousel-slide-product-image" loading="lazy">
                     <div class="product-info">
                         <p class="latest__products__carousel-slide-product-title">Eleganckie buty skórzane</p>
                         <p class="latest__products__carousel-slide-product-availability">Zapato | Dostępny</p>
@@ -96,7 +96,7 @@ export function createProducts() {
                     <div class="latest__products__carousel-slide-product-badges">
                         <p class="latest__products__carousel-slide-product-badges-badge new">nowość</p>
                     </div>
-                    <img src="https://picsum.photos/seed/5566/620/850" alt="Product 6" class="latest__products__carousel-slide-product-image">
+                    <img src="https://picsum.photos/seed/5566/620/850" alt="Product 6" class="latest__products__carousel-slide-product-image" loading="lazy">
                     <div class="product-info">
                         <p class="latest__products__carousel-slide-product-title">Sportowe sneakersy</p>
                         <p class="latest__products__carousel-slide-product-availability">Zapato | Dostępny</p>
@@ -110,7 +110,7 @@ export function createProducts() {
                     <div class="latest__products__carousel-slide-product-badges">
                         <p class="latest__products__carousel-slide-product-badges-badge sale">promocja</p>
                     </div>
-                    <img src="https://picsum.photos/seed/6677/620/850" alt="Product 7" class="latest__products__carousel-slide-product-image">
+                    <img src="https://picsum.photos/seed/6677/620/850" alt="Product 7" class="latest__products__carousel-slide-product-image" loading="lazy">
                     <div class="product-info">
                         <p class="latest__products__carousel-slide-product-title">Klasyczne oxfordy</p>
                         <p class="latest__products__carousel-slide-product-availability">Zapato | Dostępny</p>
@@ -129,7 +129,7 @@ export function createProducts() {
                         <p class="latest__products__carousel-slide-product-badges-badge bestseller">bestseller</p>
                         <p class="latest__products__carousel-slide-product-badges-badge new">nowość</p>
                     </div>
-                    <img src="https://picsum.photos/seed/7788/620/850" alt="Product 8" class="latest__products__carousel-slide-product-image">
+                    <img src="https://picsum.photos/seed/7788/620/850" alt="Product 8" class="latest__products__carousel-slide-product-image" loading="lazy">
                     <div class="product-info">
                         <p class="latest__products__carousel-slide-product-title">Wysokie botki zimowe</p>
                         <p class="latest__products__carousel-slide-product-availability">Zapato | Dostępny</p>
@@ -143,7 +143,7 @@ export function createProducts() {
                     <div class="latest__products__carousel-slide-product-badges">
                         <p class="latest__products__carousel-slide-product-badges-badge sale">promocja</p>
                     </div>
-                    <img src="https://picsum.photos/seed/8899/620/850" alt="Product 9" class="latest__products__carousel-slide-product-image">
+                    <img src="https://picsum.photos/seed/8899/620/850" alt="Product 9" class="latest__products__carousel-slide-product-image" loading="lazy">
                     <div class="product-info">
                         <p class="latest__products__carousel-slide-product-title">Letnie sandały</p>
                         <p class="latest__products__carousel-slide-product-availability">Zapato | Dostępny</p>
@@ -161,7 +161,7 @@ export function createProducts() {
                     <div class="latest__products__carousel-slide-product-badges">
                         <p class="latest__products__carousel-slide-product-badges-badge new">nowość</p>
                     </div>
-                    <img src="https://picsum.photos/seed/9900/620/850" alt="Product 10" class="latest__products__carousel-slide-product-image">
+                    <img src="https://picsum.photos/seed/9900/620/850" alt="Product 10" class="latest__products__carousel-slide-product-image" loading="lazy">
                     <div class="product-info">
                         <p class="latest__products__carousel-slide-product-title">Casualowe loafersy</p>
                         <p class="latest__products__carousel-slide-product-availability">Zapato | Dostępny</p>
@@ -175,7 +175,7 @@ export function createProducts() {
                     <div class="latest__products__carousel-slide-product-badges">
                         <p class="latest__products__carousel-slide-product-badges-badge bestseller">bestseller</p>
                     </div>
-                    <img src="https://picsum.photos/seed/1010/620/850" alt="Product 11" class="latest__products__carousel-slide-product-image">
+                    <img src="https://picsum.photos/seed/1010/620/850" alt="Product 11" class="latest__products__carousel-slide-product-image" loading="lazy">
                     <div class="product-info">
                         <p class="latest__products__carousel-slide-product-title">Trekkingowe buty górskie</p>
                         <p class="latest__products__carousel-slide-product-availability">Zapato | Dostępny</p>
@@ -190,7 +190,7 @@ export function createProducts() {
                         <p class="latest__products__carousel-slide-product-badges-badge sale">promocja</p>
                         <p class="latest__products__carousel-slide-product-badges-badge new">nowość</p>
                     </div>
-                    <img src="https://picsum.photos/seed/1111/620/850" alt="Product 12" class="latest__products__carousel-slide-product-image">
+                    <img src="https://picsum.photos/seed/1111/620/850" alt="Product 12" class="latest__products__carousel-slide-product-image" loading="lazy">
                     <div class="product-info">
                         <p class="latest__products__carousel-slide-product-title">Modne czółenka</p>
                         <p class="latest__products__carousel-slide-product-availability">Zapato | Dostępny</p>
@@ -205,5 +205,5 @@ export function createProducts() {
             </div>
         </div>
     </div>
-  `
-} 
+  `;
+}

@@ -1,4 +1,4 @@
-import { newsletterLogo, arrowRightLogo } from '../assets/index.js'
+import { newsletterLogo, arrowRightLogo } from "../assets/index.js";
 
 export function createNewsletter() {
   return `
@@ -11,9 +11,9 @@ export function createNewsletter() {
             <div class="newsletter__form-email">
                 <input type="email" class="newsletter__form-email-input" placeholder="Wpisz swój e-mail" />
                 <a class="newsletter__form-email-button">
-                    <img src="${arrowRightLogo}" alt="submit" class="newsletter__form-email-button-image" />
+                    <img src="${arrowRightLogo}" alt="submit" class="newsletter__form-email-button-image" loading="lazy" />
                 </a>
-                <span class="newsletter__form-email-error">&#9888; Proszę podać prawidłowy adres e-mail.</span>
+                <span class="newsletter__form-email-error">⚠ Proszę podać prawidłowy adres e-mail.</span>
             </div>
             <div class="newsletter__form-checkbox">
                 <input id="mail" type="checkbox" class="newsletter__form-checkbox-input"/>
@@ -21,5 +21,5 @@ export function createNewsletter() {
             </div>
         </div>
     </div>
-  `
-} 
+  `;
+}

@@ -7,8 +7,8 @@ import {
   klapkiIcon,
   botkiIcon,
   kozakiIcon,
-  outletIcon
-} from '../assets/index.js';
+  outletIcon,
+} from "../assets/index.js";
 
 export function createModals() {
   return `
@@ -23,7 +23,7 @@ export function createModals() {
           </div>
           <div class="cart__items">
               <div class="cart__items-item">
-                  <img class="cart__items-item__image" src="https://picsum.photos/seed/1212/620/850" alt="Półbuty mokasyny na grubej podeszwie">
+                  <img class="cart__items-item__image" src="https://picsum.photos/seed/1212/620/850" alt="Półbuty mokasyny na grubej podeszwie" loading="lazy">
                   <div class="cart__items-item__details">
                       <p class="cart__items-item__name">Półbuty mokasyny na grubej podeszwie</p>
                       <p class="cart__items-item__price-info">1 szt. x 129,99 zł</p>
@@ -33,7 +33,7 @@ export function createModals() {
                   </button>
               </div>
               <div class="cart__items-item">
-                  <img class="cart__items-item__image" src="https://picsum.photos/seed/3434/620/850" alt="Półbuty skóra naturalna - model 258">
+                  <img class="cart__items-item__image" src="https://picsum.photos/seed/3434/620/850" alt="Półbuty skóra naturalna - model 258" loading="lazy">
                   <div class="cart__items-item__details">
                       <p class="cart__items-item__name">Półbuty skóra naturalna - model 258</p>
                       <p class="cart__items-item__price-info">1 szt. x 129,99 zł</p>
@@ -76,25 +76,25 @@ export function createModals() {
                 <h2 class="search-modal__title">Wyszukiwane produkty</h2>
                 <div class="search-modal__products">
                     <div class="search-modal__product-item">
-                        <img src="https://picsum.photos/seed/ab1/620/850" alt="Półbuty mokasyny na grubej podeszwie">
+                        <img src="https://picsum.photos/seed/ab1/620/850" alt="Półbuty mokasyny na grubej podeszwie" loading="lazy">
                         <p class="search-modal__product-name">Półbuty mokasyny na grubej podeszwie</p>
                         <p class="search-modal__product-availability">Zapato | Dostępny</p>
                         <p class="search-modal__product-price">350,10zł</p>
                     </div>
                     <div class="search-modal__product-item">
-                        <img src="https://picsum.photos/seed/cd2/620/850" alt="Półbuty skóra naturalna - model 258">
+                        <img src="https://picsum.photos/seed/cd2/620/850" alt="Półbuty skóra naturalna - model 258" loading="lazy">
                         <p class="search-modal__product-name">Półbuty skóra naturalna - model 258</p>
                         <p class="search-modal__product-availability">Zapato | Dostępny</p>
                         <p class="search-modal__product-price">350,10zł</p>
                     </div>
                     <div class="search-modal__product-item">
-                         <img src="https://picsum.photos/seed/ef3/620/850" alt="Półbuty mokasyny na grubej podeszwie">
+                         <img src="https://picsum.photos/seed/ef3/620/850" alt="Półbuty mokasyny na grubej podeszwie" loading="lazy">
                          <p class="search-modal__product-name">Półbuty mokasyny na grubej podeszwie</p>
                         <p class="search-modal__product-availability">Zapato | Dostępny</p>
                         <p class="search-modal__product-price">350,10zł</p>
                     </div>
                     <div class="search-modal__product-item">
-                        <img src="https://picsum.photos/seed/gh4/620/850" alt="Półbuty skóra naturalna - model 258">
+                        <img src="https://picsum.photos/seed/gh4/620/850" alt="Półbuty skóra naturalna - model 258" loading="lazy">
                         <p class="search-modal__product-name">Półbuty skóra naturalna - model 258</p>
                         <p class="search-modal__product-availability">Zapato | Dostępny</p>
                         <p class="search-modal__product-price">350,10zł</p>
@@ -158,63 +158,63 @@ export function createModals() {
         <ul class="mobile-menu__submenu-items">
             <li>
                 <a href="#">
-                    <img src="${polbutyIcon}" alt="Półbuty Icon">
+                    <img src="${polbutyIcon}" alt="Półbuty Icon" loading="lazy">
                     <span>Półbuty</span>
                 </a>
                 <i class="fa-solid fa-chevron-right"></i>
             </li>
             <li>
                 <a href="#">
-                    <img src="${jazzowkiIcon}" alt="Jazzówki Icon">
+                    <img src="${jazzowkiIcon}" alt="Jazzówki Icon" loading="lazy">
                     <span>Jazzówki</span>
                 </a>
                 <i class="fa-solid fa-chevron-right"></i>
             </li>
             <li class="active">
                 <a href="#">
-                    <img src="${szpilkiIcon}" alt="Czółenka Icon">
+                    <img src="${szpilkiIcon}" alt="Czółenka Icon" loading="lazy">
                     <span>Czółenka</span>
                 </a>
                 <i class="fa-solid fa-chevron-right"></i>
             </li>
             <li>
                 <a href="#">
-                    <img src="${balerinkiIcon}" alt="Baleriny Icon">
+                    <img src="${balerinkiIcon}" alt="Baleriny Icon" loading="lazy">
                     <span>Baleriny</span>
                 </a>
                 <i class="fa-solid fa-chevron-right"></i>
             </li>
             <li>
                 <a href="#">
-                    <img src="${sandalyIcon}" alt="Sandały Icon">
+                    <img src="${sandalyIcon}" alt="Sandały Icon" loading="lazy">
                     <span>Sandały</span>
                 </a>
                 <i class="fa-solid fa-chevron-right"></i>
             </li>
             <li>
                 <a href="#">
-                    <img src="${klapkiIcon}" alt="Klapki Icon">
+                    <img src="${klapkiIcon}" alt="Klapki Icon" loading="lazy">
                     <span>Klapki</span>
                 </a>
                 <i class="fa-solid fa-chevron-right"></i>
             </li>
             <li>
                 <a href="#">
-                    <img src="${botkiIcon}" alt="Botki Icon">
+                    <img src="${botkiIcon}" alt="Botki Icon" loading="lazy">
                     <span>Botki</span>
                 </a>
                 <i class="fa-solid fa-chevron-right"></i>
             </li>
             <li>
                 <a href="#">
-                    <img src="${kozakiIcon}" alt="Kozaki Icon">
+                    <img src="${kozakiIcon}" alt="Kozaki Icon" loading="lazy">
                     <span>Kozaki</span>
                 </a>
                 <i class="fa-solid fa-chevron-right"></i>
             </li>
             <li>
                 <a href="#">
-                    <img src="${outletIcon}" alt="Outlet Icon">
+                    <img src="${outletIcon}" alt="Outlet Icon" loading="lazy">
                     <span>Outlet</span>
                 </a>
                 <i class="fa-solid fa-chevron-right"></i>
@@ -254,5 +254,5 @@ export function createModals() {
 </div>
         </div>
     </div>
-  `
-} 
+  `;
+}
