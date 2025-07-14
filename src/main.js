@@ -592,6 +592,49 @@ document.querySelector('#app').innerHTML = `
         </div>
     </div>
 </div>
+<div class="search-modal-overlay">
+    <div class="search-modal">
+        <div class="search-modal__bar">
+            <input type="text" class="search-modal__input" placeholder="Wyszukaj">
+            <button class="search-modal__search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+            <button class="search-modal__close-btn">
+                <i class="fa-regular fa-circle-xmark"></i>
+            </button>
+        </div>
+        <div class="search-modal__content">
+            <h2 class="search-modal__title">Wyszukiwane produkty</h2>
+            <div class="search-modal__products">
+                <div class="search-modal__product-item">
+                    <img src="https://picsum.photos/seed/ab1/620/850" alt="Półbuty mokasyny na grubej podeszwie">
+                    <p class="search-modal__product-name">Półbuty mokasyny na grubej podeszwie</p>
+                    <p class="search-modal__product-availability">Zapato | Dostępny</p>
+                    <p class="search-modal__product-price">350,10zł</p>
+                </div>
+                <div class="search-modal__product-item">
+                    <img src="https://picsum.photos/seed/cd2/620/850" alt="Półbuty skóra naturalna - model 258">
+                    <p class="search-modal__product-name">Półbuty skóra naturalna - model 258</p>
+                    <p class="search-modal__product-availability">Zapato | Dostępny</p>
+                    <p class="search-modal__product-price">350,10zł</p>
+                </div>
+                <div class="search-modal__product-item">
+                     <img src="https://picsum.photos/seed/ef3/620/850" alt="Półbuty mokasyny na grubej podeszwie">
+                     <p class="search-modal__product-name">Półbuty mokasyny na grubej podeszwie</p>
+                    <p class="search-modal__product-availability">Zapato | Dostępny</p>
+                    <p class="search-modal__product-price">350,10zł</p>
+                </div>
+                <div class="search-modal__product-item">
+                    <img src="https://picsum.photos/seed/gh4/620/850" alt="Półbuty skóra naturalna - model 258">
+                    <p class="search-modal__product-name">Półbuty skóra naturalna - model 258</p>
+                    <p class="search-modal__product-availability">Zapato | Dostępny</p>
+                    <p class="search-modal__product-price">350,10zł</p>
+                </div>
+            </div>
+            <a href="#" class="search-modal__show-all">Pokaż wszystkie</a>
+        </div>
+    </div>
+</div>
 `
 
 document.querySelector(".newsletter__form-email-button").addEventListener("click", (event) => {
@@ -617,6 +660,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const cartToggleButton = document.querySelector('.cart-toggle-button');
     const cartOverlay = document.querySelector('.cart-overlay');
     const cartCloseButton = document.querySelector('.cart__close-btn');
+
+    const searchInputNav = document.querySelector('.nav__additional__search-input');
+    const searchModalOverlay = document.querySelector('.search-modal-overlay');
+    const searchModalCloseBtn = document.querySelector('.search-modal__close-btn');
+    const searchModalInput = document.querySelector('.search-modal__input');
 
     if (dropdownTrigger && dropdownMenu) {
         dropdownTrigger.addEventListener('click', (e) => {
@@ -665,6 +713,29 @@ document.addEventListener('DOMContentLoaded', () => {
             dropdownMenu.style.display = 'none';
             dropdownIcon.classList.remove('fa-chevron-up');
             dropdownIcon.classList.add('fa-chevron-down');
+        }
+    });
+
+    const openSearchModal = () => {
+        searchModalOverlay.classList.add('active');
+        searchModalInput.focus();
+    };
+
+    const closeSearchModal = () => {
+        searchModalOverlay.classList.remove('active');
+    };
+
+    if (searchInputNav) {
+        searchInputNav.addEventListener('click', openSearchModal);
+    }
+
+    if (searchModalCloseBtn) {
+        searchModalCloseBtn.addEventListener('click', closeSearchModal);
+    }
+
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape' && searchModalOverlay.classList.contains('active')) {
+            closeSearchModal();
         }
     });
 });
