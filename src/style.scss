@@ -1728,6 +1728,13 @@ input[type="email"] {
     gap: 16px;
   }
 
+  .cart {
+    &__container {
+      width: 100%;
+      max-width: 420px;
+    }
+  }
+
   .header {
     height: 44px;
     background-color: #0068ff;
