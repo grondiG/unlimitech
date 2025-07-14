@@ -1730,8 +1730,20 @@ input[type="email"] {
 
   .cart {
     &__container {
+      height: 70%;
       width: 100%;
       max-width: 420px;
+      gap: 12px;
+    }
+    &__items{
+      gap: 12px;
+      &-item{
+        padding: 12px 0;
+      }
+    }
+    &__footer{
+      height: 30%;
+      padding: 8px 32px;
     }
   }
 
