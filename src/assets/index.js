@@ -1,5 +1,5 @@
 // Logo
-import unlimitechLogo from './logo.svg'
+import unlimitechLogo from './Logo.svg'
 
 // Icons
 import phoneLogo from './icons/phone-flip.svg'
